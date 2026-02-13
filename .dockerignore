@@ -1,0 +1,27 @@
+# Node dependencies
+node_modules
+npm-debug.log
+
+# Git
+.git
+.gitignore
+
+# GitHub workflows
+.github
+
+# Docker files (not needed inside container)
+docker-compose.yml
+Dockerfile
+
+# Local environment files
+.env
+.env.local
+
+# Logs
+logs
+*.log
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode

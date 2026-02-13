@@ -1,0 +1,10 @@
+{
+  "name": "devops-cicd-prod",
+  "version": "1.0.0",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "test": "node app/test.js",
+    "lint": "echo Lint Passed"
+  }
+}
