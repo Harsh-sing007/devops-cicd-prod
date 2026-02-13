@@ -1,0 +1,21 @@
+name: Auto Version Tag
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create Tag
+        run: |
+          VERSION=1.0.${{ github.run_number }}
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git tag $VERSION
+          git push origin $VERSION
